@@ -1,4 +1,4 @@
-# HTLV Web App
+# HLTV Web App
 
 HLTV.org clone made with Vue.js using HLTV API https://hltv-api.vercel.app/
 
