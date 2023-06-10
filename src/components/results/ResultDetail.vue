@@ -3,7 +3,7 @@ defineProps(['result'])
 </script>
 
 <template>
-  <router-link to="#" class="result-container">
+  <router-link :to="`/results/${result.matchId}`" class="result-container">
     <div class="result-event">
       {{ result.event.name }}
     </div>

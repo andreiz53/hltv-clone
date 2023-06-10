@@ -5,6 +5,7 @@ import ResultsView from '../views/ResultsView.vue'
 import SingleNewsView from '../views/SingleNewsView.vue'
 import TeamsView from '../views/TeamsView.vue'
 import SingleTeamView from '../views/SingleTeamView.vue'
+import SingleResultView from '../views/SingleResultView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,6 +26,11 @@ const router = createRouter({
       path: '/results',
       name: 'results',
       component: ResultsView
+    },
+    {
+      path: '/results/:id',
+      name: 'single-result',
+      component: SingleResultView
     },
     {
       path: '/teams',

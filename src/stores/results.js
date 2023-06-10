@@ -29,9 +29,12 @@ export const useResultsStore = defineStore('store', () => {
         let latest = results.value.slice(0, number);
         return latest;
     })
+    const getResultById = computed(() => {
+        return (id) => results.value.find(result => result.matchId === id)
+    })
 
 
     fetchData();
 
-    return { data, isLoading, error, getLatest }
+    return { data, isLoading, error, getLatest, getResultById }
 })
